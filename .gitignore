@@ -2,6 +2,10 @@
 *.o
 *.a
 *.so
+*.pyc
+
+# Tempfiles
+*~
 
 # Folders
 _obj
