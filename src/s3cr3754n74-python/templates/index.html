@@ -5,8 +5,18 @@
   <body>
     <h1>Secret Santa</h1>
     <form method="POST">
-      <label for="emails">E-mails</label>
-      <textarea name="emails" id="emails" rows="20" cols="60" tabindex="0">
+      <ul>
+        <li>
+          <label for="just_test">Just test</label>
+          <input type="checkbox" id="just_test" name="just_test" value="true" checked="true" />
+        </li>
+        <li>
+          <label for="subject">Subject</label>
+          <input type="text" name="subject" value="Amigo secreto - Teste" />
+        </li>
+        <li>
+          <label for="emails">E-mails</label>
+          <textarea name="emails" id="emails" rows="20" cols="60" tabindex="0">
 test1@a.com
 test2@a.com
 test3@a.com
@@ -18,8 +28,12 @@ test8@a.com
 test9@a.com
 test10@a.com
 test11@a.com
-      </textarea><br>
-      <button name="btn_submit">Continuar</button>
+          </textarea>
+        </li>
+        <li>
+          <button name="btn_submit">Continuar</button>
+        </li>
+      </ul>
     </form>
   </body>
 </html>
