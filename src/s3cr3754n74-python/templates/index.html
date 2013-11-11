@@ -31,6 +31,21 @@ test11@a.com
           </textarea>
         </li>
         <li>
+          <label for="template">Template</label>
+          <textarea name="template" id="template" rows="20" cols="60" tabindex="0">
+{% raw %}Hello,
+
+This is the email of your Secret Santa:
+
+{{ kid }}
+
+Remember:
+1. Your gift must be inspired by your Secret Santa's top 3 Interests.
+2. The maximum value is R$ 100.
+3. DO NOT DELETE THIS EMAIL!{% endraw %}
+          </textarea>
+        </li>
+        <li>
           <button name="btn_submit">Continuar</button>
         </li>
       </ul>

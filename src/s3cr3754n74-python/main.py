@@ -28,7 +28,7 @@ class MainHandler(webapp2.RequestHandler):
             "<no-reply@banffy.com.br>"
         subject = self.request.POST['subject']
         just_test = self.request.POST.get('just_test', False) == 'true'
-        email_template = jinja_environment.get_template('email.txt')
+        email_template = jinja2.Template(self.request.POST['template'])
         response_template = jinja_environment.get_template('response.html')
         if just_test:
             messages = []
